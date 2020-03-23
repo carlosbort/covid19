@@ -24,7 +24,7 @@ La fuente de datos son las oficiales del estado español, pero nada de esto hubi
 
 ## Colaboraciones
 
-Para colaboraciones en otras **Comunidades Autónomas o paises, encantado de ayudar**. Podéis contactarme por Twitter:
+Para colaboraciones en otras **Comunidades Autónomas o países, encantado de ayudar**. Podéis contactarme por Twitter:
 
 - [@Carlos_Bort](https://twitter.com/Carlos_Bort)
 
