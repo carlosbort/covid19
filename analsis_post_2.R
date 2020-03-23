@@ -236,7 +236,7 @@ madrid_contag_proj<-
     y = "Aproximación de contagiados",
     caption = "Data Source: Datadista. Elaboración: Carlos Bort "
   ) + 
-  facet_grid(type_f~., scales="free")
+  facet_grid(type_f~.)
 
 madrid_contag_proj
 #ggsave(madrid_contag_proj,filename = "img2/contagios_est.png",width = 13,height = 8,dpi = 400)
@@ -391,7 +391,7 @@ fit_nls <-
     x = "Fecha",
     y = "Número de contagiados estimados",
     caption = "Data Source: Datadista. Elaboración: Carlos Bort "
-  ) + facet_grid(type_f ~ ., scales = "free")
+  ) + facet_grid(type_f ~ .)
 fit_nls
 #ggsave(fit_nls,filename = "img2/nls_fit.png",width = 13,height = 8,dpi = 320)
 
@@ -477,7 +477,7 @@ models_3_estado_alarma<-ggplot(mad_melted_pred,aes(x=day,y=value, color=type_f))
     color = "",
     caption = "Data Source: Datadista. Elaboración: Carlos Bort "
   ) +
-  facet_grid(variable_f~., scales="free")
+  facet_grid(variable_f~.)
 models_3_estado_alarma
 
 #ggsave(models_3_estado_alarma,filename = "img2/pred_to_alarm_fit.png",width = 15,height = 8,dpi = 400)
