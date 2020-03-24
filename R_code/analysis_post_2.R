@@ -62,7 +62,7 @@ fallecidos %>%
   melt( id.vars=c("cod_ine",  "CCAA")) -> casos_covid
 
 setnames(casos_covid, 'variable', 'dia')
-casos_covid[, dia := as.Date(dia, format='%d/%m/%Y')]
+casos_covid[, dia := as.Date(dia, format='%Y-%m-%d')]
 casos_covid <- casos_covid[CCAA != 'Total'] 
 setorder(casos_covid, CCAA, dia)
 
@@ -158,6 +158,9 @@ death_to_contan_day<-function(fallecimientos, day="2020-03-04", fatal_rate = 0.0
   day_contan = as.Date(day) -infection_days
   return(list(day_contan,cases_caused))
 }
+
+
+
 
 col_names = c("date", "contag")
 

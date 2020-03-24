@@ -60,7 +60,7 @@ casos %>%
   melt( id.vars=c("cod_ine",  "CCAA")) -> casos_covid
 
 setnames(casos_covid, 'variable', 'dia')
-casos_covid[, dia := as.Date(dia, format='%d/%m/%Y')]
+casos_covid[, dia := as.Date(dia, format='%Y-%m-%d')]
 casos_covid <- casos_covid[CCAA != 'Total'] 
 setorder(casos_covid, CCAA, dia)
 
